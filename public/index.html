@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Web Vitals Optimization Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Core Web Vitals Optimization Tool 🚀</h1>
+    <p>Enter your website URL to analyze Core Web Vitals and get actionable recommendations.</p>
+
+    <label for="url">Website URL:</label>
+    <input type="url" id="url" placeholder="https://example.com">
+    <button id="analyzeButton">Analyze</button>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="hidden">
+      <p>Analyzing... Please wait.</p>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results">
+      <h2>Analysis Results 📊</h2>
+      <div id="vitalsReport"></div>
+      <div id="recommendations"></div>
+      <div id="eeatChecklist"></div>
+    </div>
+
+    <!-- Premium Section -->
+    <div id="premiumSection" class="hidden">
+      <h2>Premium Insights 💎</h2>
+      <p>Unlock advanced insights and personalized recommendations for just $10/month.</p>
+      <button onclick="subscribe()">Subscribe Now</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
